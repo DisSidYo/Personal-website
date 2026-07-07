@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,4 +183,192 @@
   setCategory('se');
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects // ARC_//</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<nav id="nav" class="show">
+  <div class="logo">ARC_//</div>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="about.html">Life So Far</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <section class="projects-page">
+    <div class="section-tag reveal in">02 // SELECTED WORK</div>
+    <h2 class="section-title" style="margin-bottom:14px;">Projects.</h2>
+    <p class="lede reveal in">Pick a category to see what I've built in that space.</p>
+
+    <!-- ---------------- Category cards ---------------- -->
+    <div class="cat-grid">
+
+      <button class="cat-card active reveal in" data-cat="se" type="button">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 5.5 2.5 12 8 18.5"/>
+            <path d="M16 5.5 21.5 12 16 18.5"/>
+            <path d="M13.5 4 10.5 20"/>
+          </svg>
+        </div>
+        <h3>Software Engineering</h3>
+        <div class="cat-count" data-count="se">-- PROJECTS</div>
+      </button>
+
+      <button class="cat-card reveal in" data-cat="ai" type="button">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="7" width="10" height="10" rx="1.5"/>
+            <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>
+          </svg>
+        </div>
+        <h3>Artificial Intelligence</h3>
+        <div class="cat-count" data-count="ai">-- PROJECTS</div>
+      </button>
+
+      <button class="cat-card reveal in" data-cat="data" type="button">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20V10M11 20V4M18 20v-7"/>
+            <path d="M2.5 20.5h19"/>
+          </svg>
+        </div>
+        <h3>Data Analysis</h3>
+        <div class="cat-count" data-count="data">-- PROJECTS</div>
+      </button>
+
+    </div>
+
+    <!-- ---------------- Filtered project list ---------------- -->
+    <div class="proj-panel-label"><span class="dot"></span> <span id="panel-label">SOFTWARE ENGINEERING</span></div>
+
+    <div class="proj-list filtered" id="proj-list">
+
+      <a href="https://github.com/DisSidYo/CivicSync---Sync-with-the-public" class="proj visible" data-cat="se" target="_blank" rel="noopener">
+        <div class="idx">001</div>
+        <div class="info">
+          <h3>Civic Sync</h3>
+          <p>An online platform that enables governments to share public initiatives and allows citizens to upvote/downvote them.<br> <span class="tag">Python · Flask · Next.js · PostgreSQL · Vercel</span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      
+
+      <a href="https://github.com/Lora224/Magnet" class="proj" data-cat="se" target="_blank" rel="noopener">
+        <div class="idx">002</div>
+        <div class="info">
+          <h3>Fridge Magnet (iPad)</h3>
+          <p>An app that lets family use post-it notes virtually.<br> <span class="tag">Swift · SwiftUI · Figma</span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://github.com/DisSidYo/Assignment2-31263" class="proj" data-cat="se" target="_blank" rel="noopener">
+        <div class="idx">003</div>
+        <div class="info">
+          <h3>PacMan - my version</h3>
+          <p>PacStudent - students chasing after recruiters.<br> <span class="tag">C# · Unity </span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://github.com/DisSidYo/csiro-internship-deepfake-detection" class="proj" data-cat="ai" target="_blank" rel="noopener">
+        <div class="idx">001</div>
+        <div class="info">
+          <h3>Deepfake Robustness Study</h3>
+          <p>Explanation-based feature testing against adversarial deepfakes at CSIRO's Data61.<br> <span class="tag">PyTorch · TensorFlow</span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://github.com/DisSidYo/Honours_MoonRover_2026-Sid_and_Justin-" class="proj" data-cat="ai" target="_blank" rel="noopener">
+        <div class="idx">002</div>
+        <div class="info">
+          <h3>Autonomous Lunar Rover</h3>
+          <p>Autonomous lunar surface exploration rover built on the Waveshare UGV Beast PT platform, powered by an NVIDIA Jetson Orin Nano. The system performs real-time crater detection, monocular metric estimation, and autonomous hazard avoidance, streaming annotated telemetry to a React-based ground control interface. <br><span class="tag">PyTorch· OpenCV · React </span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://github.com/DisSidYo/RAG-enabled-Employee-Onboarder" class="proj" data-cat="ai" target="_blank" rel="noopener">
+        <div class="idx">003</div>
+        <div class="info">
+          <h3>RAG-enabled Employee Onboarder</h3>
+          <p>Aan intelligent on-boarding automation system integrating Hugging Face embeddings and OpenAI for Retrieval-Augmented Generation (RAG)-based communication. <br><span class="tag">LangChain · HuggingFace · Pinecone </span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="#" class="proj" data-cat="data">
+        <div class="idx">001</div>
+        <div class="info">
+          <h3>VaxTrak Dashboard</h3>
+          <p>Designed Power BI dashboards to monitor vaccination coverage, consent rates, school performance, and regional trends across multiple Local Government Areas. <br><span class="tag">Python · Azure SQL Database · Power BI</span></p>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      
+
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Your Name</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const catCards = document.querySelectorAll('.cat-card');
+  const projects = document.querySelectorAll('#proj-list .proj');
+  const panelLabel = document.getElementById('panel-label');
+
+  const catLabels = {
+    se: 'SOFTWARE ENGINEERING',
+    ai: 'ARTIFICIAL INTELLIGENCE',
+    data: 'DATA ANALYSIS',
+  };
+
+  // Populate project counts per category
+  catCards.forEach(card => {
+    const cat = card.dataset.cat;
+    const count = document.querySelectorAll(`.proj[data-cat="${cat}"]`).length;
+    const countEl = card.querySelector(`[data-count="${cat}"]`);
+    countEl.textContent = `${String(count).padStart(2, '0')} PROJECT${count === 1 ? '' : 'S'}`;
+  });
+
+  function setCategory(cat){
+    catCards.forEach(c => c.classList.toggle('active', c.dataset.cat === cat));
+    panelLabel.textContent = catLabels[cat] || cat.toUpperCase();
+    projects.forEach(p => p.classList.toggle('visible', p.dataset.cat === cat));
+  }
+
+  catCards.forEach(card => {
+    card.addEventListener('click', () => setCategory(card.dataset.cat));
+  });
+
+  // Default view
+  setCategory('se');
+</script>
+</body>
+>>>>>>> e08ca5be6b4337dc424d1c3ea5edd1a7558173d4
 </html>
